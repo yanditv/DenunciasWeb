@@ -1,0 +1,87 @@
+/* .App {
+  text-align: center;
+} */
+:root {
+  --ifm-color-primary: #61ba9e;
+  --ifm-color-primary-dark: #4db192;
+  --ifm-color-primary-darker: #49a78a;
+  --ifm-color-primary-darkest: #2a473e;
+  --ifm-color-primary-light: #75c3aa;
+  --ifm-color-primary-lighter: #7fc7b0;
+  --ifm-color-primary-lightest: #9cd4c2;
+  --ifm-code-font-size: 95%;
+  /* Leaflet uses z-index up to 1000 */
+  --ifm-z-index-fixed: 1001;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+.DocSearch-Modal {
+  /* Make sure search modal is below navbar */
+  margin-top: 100px !important;
+}
+
+.leaflet-container {
+  height: 500px;
+}
+
+.markdown > h2 {
+  border-bottom: 2px solid var(--ifm-font-color-base);
+  padding-bottom: 5px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.pointer{
+  cursor:pointer;
+}
+.cursor-active{
+  cursor:pointer;
+  transform: rotate(0deg);
+}
+.datatable-sort-icon.active {
+  opacity: 1;
+  color: var(--datatable-color);
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar {
+  -webkit-box-shadow: 0 10px 20px 0 rgb(0 0 0 / 5%);
+  box-shadow: none;
+   padding-top: .5rem; 
+}
